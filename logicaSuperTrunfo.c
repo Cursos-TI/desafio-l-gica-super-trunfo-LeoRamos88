@@ -183,9 +183,19 @@ int main()
     printf("Escolha uma das opções :: ");
     scanf("%d",&entrar);
 
-    if (entrar == 1)
+    switch (entrar)
     {
+    case 1:
         Cadastro();
+        break;
+    case 2:
+        printf("As regras são : \n");
+        printf("Insira os dados com base no local escolhido.\n ");
+        printf("Procure as informações mias recentes para uma melhor experiência.\n");
+        break;
+    
+    default:
+        break;
     }
     
     return 0;
